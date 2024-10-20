@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { useGLTF } from '@react-three/drei'
 
-const Desk = () => {
+export function Computer(props) {
+    const { nodes, materials } = useGLTF('/models/computer.glb')
     return (
-        <div> Desk </div>
+        <group {...props} dispose={null}>
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Computer_Mesh_lambert2_0.geometry}
+                material={materials.lambert2}
+                scale={0.01}
+            />
+        </group>
     )
 }
-export default Desk
+
+useGLTF.preload('/models/computer.glb')
+
+export default Computer;

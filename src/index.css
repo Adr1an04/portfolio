@@ -7,12 +7,38 @@
 * {
   scroll-behavior: smooth;
 }
-
-body {
-  background: linear-gradient(135deg, #010103 0%, #1a1a1d 100%);
-  font-family: 'General Sans', sans-serif;
+@font-face {
+  font-family: 'Barlow SemiCondensed'; /* Match this name exactly */
+  src: url('/public/fonts/BarlowSemiCondensed-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+body {
+  background: linear-gradient(to bottom, #141414, #000000);
+  font-family: 'Barlow SemiCondensed', sans-serif; /* Consistency in font family name */
+}
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid #f31838;
+  white-space: nowrap;
+  padding-right: 5px;
+  animation:
+          typing 0.1ms steps(30, end),
+          blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f31838 }
+}
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;
@@ -27,11 +53,11 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-neutral-400 hover:text-red-500 max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
+    @apply text-lg md:text-base hover:text-red-500 transition-colors;
   }
 
   .nav-sidebar {
@@ -44,7 +70,7 @@ body {
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300 transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
   }
 
   .btn-ping {
@@ -57,8 +83,9 @@ body {
 
   /* hero section */
   .hero_tag {
-    @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
+    @apply pb-2 text-center mt-5 md:text-6xl sm:text-5xl text-4xl font-black leading-normal text-white;
   }
+
 
   /* about section */
   .grid-container {
@@ -66,7 +93,7 @@ body {
   }
 
   .grid-headtext {
-    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+    @apply text-xl font-semibold mb-2 text-white font-Raleway;
   }
 
   .grid-subtext {
@@ -77,7 +104,7 @@ body {
     @apply cursor-pointer flex justify-center items-center gap-2;
   }
 
-  /* projects section */
+  /* projects section  */
   .arrow-btn {
     @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient;
   }
@@ -99,7 +126,7 @@ body {
     @apply flex lg:flex-row flex-col justify-between lg:items-center items-start gap-5 mt-7;
   }
 
-  /* work experience section */
+  /*  work experience section */
   .work-container {
     @apply grid lg:grid-cols-3 grid-cols-1 gap-5 mt-12;
   }
@@ -113,7 +140,7 @@ body {
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5 transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
@@ -145,14 +172,23 @@ body {
     @apply w-2.5 h-2.5 object-contain invert brightness-0;
   }
 
-  /* footer */
+  /*  footer */
   .social-icon {
     @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
   }
 }
 
-.waving-hand {
-  animation-name: wave-animation;
+@keyframes grow-shrink-animation {
+  0%, 100% {
+    transform: scale(.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.shrink {
+  animation-name: grow-shrink-animation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
@@ -194,38 +230,4 @@ body {
   100% {
     transform: rotate(0deg);
   }
-}
-
-/* Custom animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.fade-in {
-  animation: fadeIn 1s ease-in-out;
-}
-
-.slide-in {
-  animation: slideIn 0.5s ease-in-out;
-}
-
-/* Unique gradient text */
-.unique-gradient {
-  background: linear-gradient(90deg, #ff7e5f, #feb47b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

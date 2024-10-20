@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        generalsans: ['General Sans', 'sans-serif'],
+        Barlow: ['Barlow Semi Condensed'],
       },
       colors: {
         black: {
@@ -21,6 +21,19 @@ export default {
           700: '#D6D9E9',
           600: '#AFB0B6',
           500: '#62646C',
+        },
+        red: {
+          DEFAULT: '#FF0000',
+          50: '#FFEEEE',
+          100: '#FFCCCC',
+          200: '#FF9999',
+          300: '#FF6666',
+          400: '#FF3333',
+          500: '#f31838',       // Custom red
+          600: '#D10F10',
+          700: '#A50D0D',
+          800: '#8A0B0B',
+          900: '#6E0A0A',
         },
         gradient: {
           start: '#ff7e5f',
