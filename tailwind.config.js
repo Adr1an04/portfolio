@@ -12,6 +12,7 @@ export default {
           100: '#010103',
           200: '#0E0E10',
           300: '#1C1C21',
+          400: '#1E1E1E',
           500: '#3A3A49',
           600: '#1A1A1A',
         },
@@ -35,15 +36,26 @@ export default {
           800: '#8A0B0B',
           900: '#6E0A0A',
         },
+        blue: {
+          DEFAULT: '#2B77e7',
+          50: '#E5F1FF',
+          100: '#B3D9FF',
+          200: '#80BFFF',
+          300: '#4DA6FF',
+          400: '#1A8CFF',
+          500: '#2B77e7',
+          600: '#1F5AB5',
+          700: '#174681',
+          800: '#0F336D',
+          900: '#081F4A',
+        },
+        green: {
+          500:'#68d42e'
+        },
         gradient: {
           start: '#ff7e5f',
           end: '#feb47b',
         },
-      },
-      backgroundImage: {
-        terminal: "url('/assets/terminal.png')",
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-in-out',

@@ -1,188 +1,65 @@
 import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, PerspectiveCamera } from '@react-three/drei'
 
 export function Mustang(props) {
-    const { nodes, materials } = useGLTF('/models/mustang.glb')
+    const { nodes, materials } = useGLTF('/models/ae86.glb')
     return (
         <group {...props} dispose={null}>
-            <group position={[2.852, 0, 0.085]} rotation={[-Math.PI, 0.436, -Math.PI]}>
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Object_24.geometry}
-                    material={materials['S_Mustang_Color_1.001']}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Object_25.geometry}
-                    material={materials.S_Mustang_pAL}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Object_26.geometry}
-                    material={materials.S_Mustang_outline}
-                />
-                <group position={[0.756, 0.316, 1.373]} rotation={[0, -0.436, 0]}>
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.Object_32.geometry}
-                        material={materials.S_Mustang_pAL}
-                    />
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.Object_33.geometry}
-                        material={materials.S_Mustang_outline}
-                    />
-                </group>
-                <group position={[-0.756, 0.316, 1.373]} rotation={[0, -0.436, 0]} scale={[-1, 1, 1]}>
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.Object_35.geometry}
-                        material={materials.S_Mustang_pAL}
-                    />
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.Object_36.geometry}
-                        material={materials.S_Mustang_outline}
-                    />
-                </group>
-                <group position={[0.756, 0.316, -1.362]}>
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.Object_38.geometry}
-                        material={materials.S_Mustang_pAL}
-                    />
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.Object_39.geometry}
-                        material={materials.S_Mustang_outline}
-                    />
-                </group>
-                <group position={[-0.756, 0.316, -1.362]} scale={[-1, 1, 1]}>
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.Object_41.geometry}
-                        material={materials.S_Mustang_pAL}
-                    />
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.Object_42.geometry}
-                        material={materials.S_Mustang_outline}
-                    />
-                </group>
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Object_28.geometry}
-                    material={materials.Material}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Object_30.geometry}
-                    material={materials['Material.001']}
-                />
-            </group>
             <mesh
                 castShadow
                 receiveShadow
-                geometry={nodes.Object_4.geometry}
-                material={materials.S_Mustang_Color_1}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Object_5.geometry}
-                material={materials.S_Mustang_pAL}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Object_6.geometry}
-                material={materials.S_Mustang_outline}
-            />
-            <group position={[0.756, 0.316, 1.373]}>
+                geometry={nodes.Car.geometry}
+                material={materials.Body}
+                rotation={[-Math.PI / 2, Math.PI / 2, 0]}
+                scale={100}>
                 <mesh
                     castShadow
                     receiveShadow
-                    geometry={nodes.Object_12.geometry}
-                    material={materials.S_Mustang_pAL}
+                    geometry={nodes.Wheel1.geometry}
+                    material={materials.Body}
+                    position={[-0.012, -0.055, -0.021]}
+                    rotation={[Math.PI, 0, 0]}
+                    scale={1.315}
                 />
                 <mesh
                     castShadow
                     receiveShadow
-                    geometry={nodes.Object_13.geometry}
-                    material={materials.S_Mustang_outline}
-                />
-            </group>
-            <group position={[-0.756, 0.316, 1.373]} scale={[-1, 1, 1]}>
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Object_15.geometry}
-                    material={materials.S_Mustang_pAL}
+                    geometry={nodes.Wheel4.geometry}
+                    material={materials.Body}
+                    position={[-0.011, 0.05, -0.021]}
+                    rotation={[Math.PI, 0, 0]}
+                    scale={0.06}
                 />
                 <mesh
                     castShadow
                     receiveShadow
-                    geometry={nodes.Object_16.geometry}
-                    material={materials.S_Mustang_outline}
-                />
-            </group>
-            <group position={[0.756, 0.316, -1.362]}>
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Object_18.geometry}
-                    material={materials.S_Mustang_pAL}
+                    geometry={nodes.Wheel2.geometry}
+                    material={materials.Body}
+                    position={[-0.011, 0.05, 0.026]}
+                    scale={0.06}
                 />
                 <mesh
                     castShadow
                     receiveShadow
-                    geometry={nodes.Object_19.geometry}
-                    material={materials.S_Mustang_outline}
+                    geometry={nodes.Wheel3.geometry}
+                    material={materials.Body}
+                    position={[-0.012, -0.055, 0.025]}
+                    scale={0.06}
                 />
-            </group>
-            <group position={[-0.756, 0.316, -1.362]} scale={[-1, 1, 1]}>
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Object_21.geometry}
-                    material={materials.S_Mustang_pAL}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Object_22.geometry}
-                    material={materials.S_Mustang_outline}
-                />
-            </group>
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Object_8.geometry}
-                material={materials.Material}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Object_10.geometry}
-                material={materials['Material.001']}
+            </mesh>
+            <PerspectiveCamera
+                makeDefault={false}
+                far={10000}
+                near={10}
+                fov={36.109}
+                position={[14.137, 6.789, 21.442]}
+                rotation={[-0.247, 0.604, 0.143]}
+                scale={100}
             />
         </group>
     )
 }
 
-useGLTF.preload('/models/mustang.glb')
+useGLTF.preload('/models/ae86.glb')
 
 export default Mustang;

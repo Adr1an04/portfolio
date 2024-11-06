@@ -21,21 +21,25 @@ const Navbar = () => {
     const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
-            <div className="max-w-7xl mx-auto">
-                <div className="flex justify-between items-center py-5 mx-auto c-space">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-black/30">
+            <div className="mx-auto">
+                <div className="flex justify-between items-center py-1 c-space">
                     <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
-                        <span
-                            className="block text-neutral-400 hover:text-red-500 transition-colors duration-100 ease-in">
-                            Adrian
-                        </span>
+                        <img
+                            src="/assets/AGO.svg"
+                            alt="Adrian"
+                             className={"ago"}
+                            width="50"
+                            height="50"
+                        />
+
                     </a>
 
                     <button onClick={toggleMenu}
                             className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
                             aria-label="Toggle menu">
                         <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-                             alt="toggle" className="w-6 h-6"/>
+                             alt="toggle" className="w-7 h-7"/>
                     </button>
 
                     <nav className="sm:flex hidden">
