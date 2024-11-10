@@ -302,7 +302,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
         noFaceScale: isSmall ? 1.5 : isMobile ? 1.5 : isTablet ? 2 : 3,
         noFacePosition: isMobile ? [3.24, -0.6, 5] : isTablet ? [6, -2, 8] : [8, -5, 10],
 
-        swordScale: isSmall ? 0.2 : isMobile ? 0.2 : isTablet ? 0.3 : 0.6,
+        swordScale: isSmall ? 0.3 : isMobile ? 0.3 : isTablet ? 0.4 : 0.6,
         swordPosition: isMobile ? [3, -0.15, 8] : isTablet ? [-2, -1.267, 14] : [4, -3.9, 15],
 
         cabinScale: isSmall ? 1.5 : isMobile ? 1.5 : isTablet ? 2 : 2.9,

@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #18181b;
+  overscroll-behavior: none;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f0f0f0;
+  }
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -59,11 +70,11 @@ body {
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-blue-500 transition-colors;
+    @apply text-lg md:text-base text-white hover:text-blue-500 transition-colors;
   }
 
   .nav-sidebar {
-    @apply absolute left-0 right-0 bg-black-200/75 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    @apply absolute left-0 right-0 bg-black-200/45 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
   }
 
   .text-gray_gradient {
@@ -130,18 +141,18 @@ body {
   /* Hero Section */
   .hero_tag {
     @apply text-center mt-0.5 text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl leading-normal text-white whitespace-nowrap;
-    height: 67px;
+    height: 85px;
   }
 
   @media (max-width: 640px) {
     .hero_tag {
-      height: 55px;
+      height: 50px;
     }
   }
 
   @media (min-width: 640px) and (max-width: 768px) {
     .hero_tag {
-      height: 60px;
+      height: 69px;
     }
   }
 

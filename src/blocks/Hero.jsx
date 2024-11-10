@@ -42,7 +42,7 @@ const Hero = () => {
     return (
         <section className="min-h-screen w-full flex flex-col relative" id="home">
             {/* Text Container */}
-            <div className="flex flex-col items-center mt-24 absolute left-1/2 transform -translate-x-1/2 z-10">
+            <div className="flex flex-col items-center mt-16 absolute left-1/2 transform -translate-x-1/2 z-10">
                 <p className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl text-center text-white whitespace-nowrap">
                     Hey, I'm Adrian Osorio!
                 </p>
@@ -59,21 +59,24 @@ const Hero = () => {
                     <Suspense fallback={<CanvasLoader/>}>
                         <PerspectiveCamera makeDefault position={[0, 0, 30.2]}/>
                         <HeroCamera isMobile={isMobile}>
-                            <Floor position={sizes.floorPosition} rotation={[0, Math.PI/2, 0]} scale={sizes.floorScale}/>
-                            <Sun position={sizes.SunPosition} rotation={[2, 0, Math.PI/2]} scale={sizes.SunScale}/>
-                            <Clouds position={sizes.CloudsPosition} rotation={[0, Math.PI, 0]} scale={sizes.CloudsScale}/>
+                            <Floor position={sizes.floorPosition} rotation={[0, Math.PI / 2, 0]}
+                                   scale={sizes.floorScale}/>
+                            <Sun position={sizes.SunPosition} rotation={[2, 0, Math.PI / 2]} scale={sizes.SunScale}/>
+                            <Clouds position={sizes.CloudsPosition} rotation={[0, Math.PI, 0]}
+                                    scale={sizes.CloudsScale}/>
                             <Link position={sizes.linkPosition} rotation={[0, 0.8, 0]} scale={sizes.linkScale}/>
                             <Rocks position={sizes.rocksPosition} rotation={[0, 0, 0]} scale={sizes.rocksScale}/>
-                            <Hooh position={sizes.HoohPosition} rotation={[0, Math.PI/2, 0]} scale={sizes.HoohScale}/>
+                            <Hooh position={sizes.HoohPosition} rotation={[0, Math.PI / 2, 0]} scale={sizes.HoohScale}/>
                             <Cabin position={sizes.cabinPosition} rotation={[0, 0.6, 0]}
-                                     scale={sizes.cabinScale}/>
+                                   scale={sizes.cabinScale}/>
                             <NoFace position={sizes.noFacePosition} rotation={[0, -0.5, 0]} scale={sizes.noFaceScale}/>
-                            <Sword position={sizes.swordPosition} rotation={[0, 0, 0]} scale={sizes.swordScale}/>
+                            <Sword position={sizes.swordPosition} rotation={[0, Math.PI, 0]} scale={sizes.swordScale}/>
                             <Cube position={sizes.cubePosition}/>
-                            <Campfire position={sizes.campPosition} rotation={[0, Math.PI/2, 0]} scale={sizes.campScale}/>
+                            <Campfire position={sizes.campPosition} rotation={[0, Math.PI / 2, 0]}
+                                      scale={sizes.campScale}/>
                             <ambientLight intensity={0.7}/>
                             <directionalLight position={[100, 50, 50]} intensity={3}/>
-                        </HeroCamera> {/* Corrected this closing tag */}
+                        </HeroCamera>
                     </Suspense>
                 </Canvas>
             </div>

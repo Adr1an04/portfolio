@@ -6,15 +6,25 @@ export function Campfire(props) {
     const { nodes, materials } = useGLTF('/models/campfire.glb')
     const fireMesh1 = useRef()
     const fireMesh2 = useRef()
+    const pointLight = useRef()
 
     useFrame((state) => {
-
-
+        // Fire scale animation
         if (fireMesh1.current && fireMesh2.current) {
-
-            const scale = 1 + Math.sin(state.clock.elapsedTime * 2) * 0.135
+            const scale = 1 + Math.sin(state.clock.elapsedTime * 2) * 0.15
             fireMesh1.current.scale.set(scale, scale, scale)
             fireMesh2.current.scale.set(scale, scale, scale)
+        }
+
+        // Animate light intensity based on fire's scale (for dynamic lighting effect)
+        if (pointLight.current) {
+            const intensity = 0.5 + Math.sin(state.clock.elapsedTime * 2) * 0.4
+            pointLight.current.intensity = intensity
+            pointLight.current.position.set(
+                fireMesh1.current.position.x,
+                fireMesh1.current.position.y + 1, // Adjust Y position if necessary
+                fireMesh1.current.position.z
+            )
         }
     })
 
@@ -57,6 +67,16 @@ export function Campfire(props) {
                 receiveShadow
                 geometry={nodes['campfire_01_Plane003-Mesh_5'].geometry}
                 material={materials.CFD8DC}
+            />
+
+            {/* Light source */}
+            <pointLight
+                ref={pointLight}
+                intensity={3000}
+                color="yellow"
+                distance={1000}
+                decay={0}
+                position={[0, 2, 0]}
             />
         </group>
     )

@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
 
             <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-                <nav className="p-5">
+                <nav className="p-5 text-white">
                     <NavItems/>
                 </nav>
             </div>

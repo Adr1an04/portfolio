@@ -1,25 +1,35 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 export function Hooh(props) {
     const group = useRef();
-
+    const [direction, setDirection] = useState('forward'); // Direction of the animation
     const { nodes, materials, animations } = useGLTF('/models/hooh.glb');
     const { actions } = useAnimations(animations, group);
 
+    const animationDuration = 10; // Increased to allow for smoother transitions
+
     useEffect(() => {
         if (actions && actions['Take 001']) {
-            actions['Take 001'].reset().play().setLoop(true);
-
-            actions['Take 001'].timeScale = 0.7;
+            actions['Take 001'].reset().play().setLoop(false);
+            actions['Take 001'].timeScale = 0.9;
 
             actions['Take 001'].onFinished = () => {
-                actions['Take 001'].timeScale = -0.5;
-                actions['Take 001'].reset().play();
+                if (direction === 'forward') {
+                    setDirection('reverse');
+                    actions['Take 001'].timeScale = -0.5;
+                    actions['Take 001'].reset().play();
+                } else {
+                    setDirection('forward');
+                    actions['Take 001'].timeScale = 0.5;
+                    actions['Take 001'].reset().play();
+                }
             };
+
+            actions['Take 001'].play();
         }
-    }, [actions]);
+    }, [actions, direction]);
 
     useFrame(({ clock }) => {
         if (group.current) {
@@ -29,6 +39,17 @@ export function Hooh(props) {
 
             if (group.current.position.x > 100) {
                 group.current.position.x = -100;
+            }
+
+            const currentTime = clock.elapsedTime % animationDuration;
+            if (actions['Take 001']) {
+                actions['Take 001'].time = currentTime;
+            }
+
+            const wingRotation = Math.sin(clock.elapsedTime * 2) * 0.5;
+            const wings = group.current.getObjectByName('wings');
+            if (wings) {
+                wings.rotation.x = wingRotation;
             }
         }
     });
