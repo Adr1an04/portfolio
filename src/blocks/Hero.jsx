@@ -1,6 +1,6 @@
-import { useState, useEffect, Suspense } from 'react';
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import {Cloud, PerspectiveCamera} from '@react-three/drei';
+import {PerspectiveCamera} from '@react-three/drei';
 import CanvasLoader from '../components/CanvasLoader.jsx';;
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants/index.js";
@@ -35,17 +35,12 @@ const Hero = () => {
 
     const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
-    useEffect(() => {
-        console.log({ isMobile, isTablet, isSmall, sizes });
-    }, [isMobile, isTablet, isSmall]);
-
     return (
         <section className="min-h-screen w-full flex flex-col relative" id="home">
-            {/* Text Container */}
             <div className="flex flex-col items-center mt-16 absolute left-1/2 transform -translate-x-1/2 z-10">
-                <p className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl text-center text-white whitespace-nowrap">
-                    Hey, I'm Adrian Osorio!
-                </p>
+                <div className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl text-center text-white whitespace-nowrap">
+                    Hey, I&#39;m Adrian Osorio!
+                </div>
                 <div className="typewriter">
                     <h1 className="hero_tag px-2 ">
                         {typeEffect}
@@ -85,7 +80,6 @@ const Hero = () => {
                 <a href="#about" className="w-fit sm:w-auto">
                     <Button
                         name="Discovery"
-                        isBeam={true}
                         containerClass="sm:w-fit w-full sm:min-w-40 sm:text-lg  mx-auto"
                     />
                 </a>

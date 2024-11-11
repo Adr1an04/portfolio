@@ -28,13 +28,13 @@ export const navLinks = [
 
 export const myProjects = [
     {
+        id: 1,
         title: 'BCI',
         desc: 'As part of my research with the U.N.A.R.Y Lab, I am developing an EEG data pipeline to process signals ' +
             'and input them into a Large Language Model (LLM) for real-time classification. ' +
             'This project aims to leverage machine learning for real-time brain activity insights, advancing brain-computer interfaces.',
         subdesc:
             'Fall 2024',
-        href: 'Example project 1',
         logo: '/assets/BCI.svg',
         logoStyle: {
             backgroundColor: '#1C1A43',
@@ -79,13 +79,13 @@ export const myProjects = [
         link: 'https://www.unarylab.com/',
     },
     {
+        id: 2,
         title: 'BIDS Parser',
         desc: 'The BIDS-parser is a tool that converts EEG datasets into the Brain Imaging Data Structure (BIDS) format, ' +
             'standardizing neuroimaging data for better analysis and collaboration. It automates the organization and ' +
             'labeling of EEG data, ensuring BIDS compliance and simplifying integration with other research tools.',
         subdesc:
             'Fall 2024',
-        href: 'Example project 1',
         logo: '/assets/bids.svg',
         logoStyle: {
             backgroundColor: '#1C1A43',
@@ -100,12 +100,12 @@ export const myProjects = [
                 path: '/assets/python.svg',
             },
             {
-                id: 1,
+                id: 2,
                 name: 'BIDS DSA',
                 path: '/assets/dsa.svg',
             },
             {
-                id: 1,
+                id: 3,
                 name: 'EEG (Electroencephalogram)',
                 path: '/assets/eeg.svg',
             },
@@ -114,13 +114,13 @@ export const myProjects = [
         link: 'https://www.unarylab.com/',
     },
     {
+        id: 3,
         title: 'Personal Portfolio',
         desc: 'This project aimed to deepen my front-end development skills, incorporating frameworks like ' +
             'Three.js and Tailwind for 3D models. I also integrated back-end functionality with email messaging for' +
             ' seamless communication, creating a fun experience that showcased both creative and technical abilities.',
         subdesc:
             'Fall 2024',
-        href: 'Example project 1',
         logo: '/assets/personal.svg',
         logoStyle: {
             backgroundColor: '#2596be',
@@ -154,13 +154,13 @@ export const myProjects = [
         ],
     },
     {
+        id: 4,
         title: 'Kanto Pokédex',
         desc: 'Kanto Pokédex was a project I developed to learn back-end basics. I set up a MongoDB database, used' +
             ' Spring Boot for the back-end, and Maven for dependency management. I built RESTful APIs for efficient ' +
             'data handling and created a dynamic React front-end to allow users access to Pokémon data.',
         subdesc:
             'Spring 2024',
-        href: 'example',
         logo: '/assets/pokedex.svg',
         logoStyle: {
             backgroundColor: '#0E1F38',
@@ -192,13 +192,13 @@ export const myProjects = [
         ],
     },
     {
+        id: 5,
         title: 'AthenaAI',
         desc: 'AthenaAI was a GPT-based tool developed for Morgan & Morgan to provide legal advisory services to ' +
             'civilians in need. My team integrated Google Speech-to-Text for voice interactions, aiming to make legal ' +
             'information more accessible and showcasing the potential of technology in the legal field.',
         subdesc:
             'KnightHacks VI',
-        href: 'Example project 1',
         logo: '/assets/athenaAI.svg',
         logoStyle: {
             backgroundColor: '#1C1A43',
@@ -232,6 +232,7 @@ export const myProjects = [
         link: 'https://devpost.com/software/athenaai',
     },
     {
+        id: 6,
         title: 'SpoilerAlert',
         desc: 'I developed the back-end for SpoilerAlert, a project designed to block movie spoilers, using MongoDB to ' +
             'store over 90 years of movie data and 600,000+ titles. I worked with Node.js for server-side operations,' +
@@ -285,7 +286,7 @@ export const myProjects = [
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
         floorScale:isSmall ? 4 : isMobile ? 4 : isTablet ? 7 : 9.06,
-        floorPosition: isMobile ? [-0, -3.6,3] : isTablet ? [-0, -7.2,2] : [-0, -11.63,2],
+        floorPosition: isMobile ? [0, -3.6,3] : isTablet ? [0, -7.2,2] : [0, -11.63,2],
 
         SunScale:isSmall ? 0.018 : isMobile ? 0.02 : isTablet ? 0.04 : 0.05,
         SunPosition: isMobile ? [-6.9, 8.3,-9] : isTablet ? [-12, 13,-29] : [-25, 13.6,-20],
@@ -294,7 +295,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
         HoohPosition: isMobile ? [-5.9, 8.3,-6] : isTablet ? [-20, 13,-20] : [-60,12,-15],
 
         CloudsScale:isSmall ? 20 : isMobile ? 20 : isTablet ? 20 : 40,
-        CloudsPosition: isMobile ? [-5.9, 6.4,-20] : isTablet ? [-12, 13,-20] : [0,10.5,-40],
+        CloudsPosition: isMobile ? [-5.9, 7.9,-20] : isTablet ? [-12, 13,-20] : [0,10.5,-40],
 
         rocksScale: isSmall ? 13 : isMobile ? 13 : isTablet ? 16 : 26,
         rocksPosition: isMobile ? [0, 1.6, 2] : isTablet ? [0, 1, 4] : [-2, -0.1, 4],

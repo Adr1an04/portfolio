@@ -5,6 +5,7 @@
 body {
   background-color: #18181b;
   overscroll-behavior: none;
+  user-select: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,10 +18,9 @@ body {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: 'Barlow SemiCondensed';
-  src: url('/public/fonts/BarlowSemiCondensed-Bold.ttf') format('truetype');
-  font-weight: normal;
+.tomorrow-bold {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -28,7 +28,7 @@ body {
   background-image: url("/assets/triangles.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Barlow SemiCondensed', sans-serif;
+  font-family: tomorrow, sans-serif;
 }
 
 .typewriter h1 {
@@ -66,7 +66,7 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-blue-500 max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-neutral-400 hover:text-blue-500 max-sm:hover:bg-gray-700 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
 
   .nav-li_a {
@@ -74,7 +74,7 @@ body {
   }
 
   .nav-sidebar {
-    @apply absolute left-0 right-0 bg-black-200/45 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    @apply absolute left-0 right-0 bg-black-100/30 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
   }
 
   .text-gray_gradient {
@@ -140,8 +140,8 @@ body {
 
   /* Hero Section */
   .hero_tag {
-    @apply text-center mt-0.5 text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl leading-normal text-white whitespace-nowrap;
-    height: 85px;
+    @apply text-center mt-0.5 text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl leading-normal text-white whitespace-nowrap;
+    height: 66px;
   }
 
   @media (max-width: 640px) {
@@ -152,7 +152,7 @@ body {
 
   @media (min-width: 640px) and (max-width: 768px) {
     .hero_tag {
-      height: 69px;
+      height: 65px;
     }
   }
 
@@ -277,14 +277,6 @@ body {
     @apply flex-1 w-0.5 mt-4 h-full bg-gray-600 group-hover:bg-gray-500;
   }
 
-  .slick-dots li button:before {
-    color: white !important;
-    font-size: 12px;
-  }
-
-  .slick-dots li.slick-active button:before {
-    color: #ffffff;
-  }
 
   .small-icon-container {
     position: relative;
@@ -298,7 +290,7 @@ body {
   }
 
   .small-icon {
-    width: 40px;
+    width: 45px;
     height: auto;
     filter: brightness(0) invert(1);
     transition: filter 0.3s ease;
@@ -349,7 +341,7 @@ body {
 
   /* Footer */
   .social-icon {
-    @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
+    @apply w-12 h-12 rounded-full flex justify-center items-center;
   }
 }
 

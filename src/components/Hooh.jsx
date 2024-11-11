@@ -33,7 +33,7 @@ export function Hooh(props) {
 
     useFrame(({ clock }) => {
         if (group.current) {
-            group.current.position.x += 0.02;
+            group.current.position.x += 0.04;
 
             group.current.position.y = Math.sin(clock.elapsedTime * 2) * 0.55 + 4;
 

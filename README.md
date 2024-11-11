@@ -12,5 +12,5 @@ Optimized for Performance: Efficiently loaded assets for a fast and smooth user 
 ## Demo
 
 You can view the live demo of the portfolio here:  
-[Your Portfolio Link]()
+[Link]()
 
