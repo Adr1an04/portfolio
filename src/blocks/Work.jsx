@@ -10,7 +10,7 @@ const WorkExperience = () => {
                     data-aos="fade-right">
                     Experience & <span className="text-blue-500">Education</span>
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl text-gray-100 mb-8 max-w-6xl mx-auto"
+                <p className="text-lg md:text-xl lg:text-2xl text-white mb-8 max-w-6xl mx-auto"
                    data-aos="fade-up">
                     I have hands-on experience in both front-end and back-end development.
                     In my previous roles, I&#39;ve worked on real-world projects, collaborated with teams,
