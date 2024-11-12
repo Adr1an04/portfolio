@@ -141,7 +141,7 @@ body {
   /* Hero Section */
   .hero_tag {
     @apply text-center mt-0.5 text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl leading-normal text-white whitespace-nowrap;
-    height: 66px;
+    height: 90px;
   }
 
   @media (max-width: 640px) {
