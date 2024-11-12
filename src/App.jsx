@@ -4,11 +4,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from './blocks/Navbar.jsx';
 import Hero from './blocks/Hero.jsx';
-import About from "./blocks/About.jsx";
-import Work from "./blocks/Work.jsx";
-import Projects from "./blocks/Projects.jsx";
-import Contact from "./blocks/Contact.jsx";
-import Footer from "./blocks/Footer.jsx";
+import About from './blocks/About.jsx';
+import Work from './blocks/Work.jsx';
+import Projects from './blocks/Projects.jsx';
+import Contact from './blocks/Contact.jsx';
+import Footer from './blocks/Footer.jsx';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
     useEffect(() => {
@@ -19,6 +20,7 @@ const App = () => {
 
     return (
         <main className="max-auto mx-auto">
+            <Analytics />
             <Navbar />
             <Hero />
             <About />
