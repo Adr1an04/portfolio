@@ -10,6 +10,7 @@ import Projects from './blocks/Projects.jsx';
 import Contact from './blocks/Contact.jsx';
 import Footer from './blocks/Footer.jsx';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
     useEffect(() => {
@@ -21,6 +22,7 @@ const App = () => {
     return (
         <main className="max-auto mx-auto">
             <Analytics />
+            <SpeedInsights />
             <Navbar />
             <Hero />
             <About />
