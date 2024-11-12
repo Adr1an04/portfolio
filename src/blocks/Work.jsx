@@ -22,7 +22,7 @@ const WorkExperience = () => {
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-10">
                         {workExperiences.map((item, index) => (
-                            <div key={item.id} className="pl-10" data-aos="fade-up"
+                            <div key={item.id} className="pl-5" data-aos="fade-up"
                                  data-aos-delay={index * 100}>
                                 <p className="text-blue-500 mb-1 text-sm text-left">{item.duration}</p>
                                 <h3 className="text-lg md:text-xl lg:text-2xl whitespace-nowrap text-left">
