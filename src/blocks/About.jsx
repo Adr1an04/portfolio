@@ -145,7 +145,7 @@ const About = () => {
                         />
                     </a>
 
-                    <a href="/assets/Adrian_Osorio_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                    <a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"
                        className="social-icon hover:text-blue-500">
                         <img
                             src="/assets/resume.svg"
