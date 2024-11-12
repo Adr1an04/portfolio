@@ -184,7 +184,7 @@ body {
   .icon-name {
     position: absolute;
     bottom: -25px;
-    left: 30%;
+    left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
