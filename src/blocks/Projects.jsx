@@ -45,7 +45,7 @@ const Projects = () => {
                     {myProjects.map((project) => (
                         <div
                             key={`${project.id}-${project.id}`}
-                            className="p-6 flex flex-col bg-transparent border-2 border-white rounded-xl transition-all duration-300 transform sm:h-[450px] md:h-[520px] lg: h-[500px]"
+                            className="p-6 flex flex-col bg-transparent border-2 border-white rounded-xl transition-all duration-300 transform sm:h-[450px] md:h-[520px] lg: h-[515px]"
                         >
                             <div className="mb-2 flex items-center text-center">
                                 <div className="relative w-20 h-20 mb-4 ">
