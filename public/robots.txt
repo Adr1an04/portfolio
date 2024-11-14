@@ -1,4 +1,5 @@
-User-agent: *
-Disallow: /admin/
-Disallow: /login/
+User-Agent: *
 Allow: /
+Disallow: /private/
+
+Sitemap: https://www.adrianosor.io/sitemap.xml
