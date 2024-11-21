@@ -31,6 +31,78 @@ body {
   font-family: tomorrow, sans-serif;
 }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full screen loading screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 3D box */
+.loading-box {
+  width: 200px;
+  height: 200px;
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: rotateX(30deg) rotateY(20deg);
+  perspective: 1000px;
+  transition: transform 0.6s ease, opacity 0.5s ease;
+}
+
+.loading-box .box-inner {
+  text-align: center;
+}
+
+.loading-box .loading-text {
+  font-size: 24px;
+  font-weight: bold;
+  transition: opacity 0.5s ease;
+}
+
+/* When loading is finished, rotate and show 'Click' text */
+.loading-box.loaded {
+  transform: rotateX(0deg) rotateY(0deg);
+  opacity: 1;
+}
+
+/* Text opacity animation for "Loading" to "Click" transition */
+.loading-box.loaded .loading-text {
+  opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .loading-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .loading-text {
+    font-size: 18px;
+  }
+}
+
+
+
 .typewriter h1 {
   overflow: hidden;
   border-right: .15em solid #2b77E7 ;
