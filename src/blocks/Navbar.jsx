@@ -27,11 +27,10 @@ const Navbar = () => {
                     <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
                         <img
                             src="/assets/AGO.svg"
-                            alt="Adrian"
-                             className={"ago"}
+                            className={"ago"}
                             width="50"
                             height="50"
-                        />
+                            alt=""/>
 
                     </a>
 
