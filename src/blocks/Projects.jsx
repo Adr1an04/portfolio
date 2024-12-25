@@ -33,10 +33,10 @@ const Projects = () => {
     };
 
     return (
-        <section data-aos="fade-up" id="projects" className="relative overflow-hidden py-34 bg-gradient-to-r text-white ">
+        <section id="projects" data-aos="fade-up" className="relative overflow-hidden py-34 bg-gradient-to-r text-white ">
             <div className="container px-5 mx-auto text-center">
-                <div className="text-3xl sm:text-4xl md:text-5xl text-center mb-8 whitespace-nowrap">Projects</div>
-                <p className="text-lg md:text-xl lg:text-2xl text-white mb-8 max-w-6xl mx-auto">
+                <div className="text-3xl sm:text-4xl md:text-5xl text-center mb-8 mt-16 whitespace-nowrap">Projects</div>
+                <p className="text-lg md:text-xl lg:text-2xl text-white mb-8 max-w-6xl mx-auto" >
                     In my career, I&#39;ve been very fortunate to have had the opportunity to grow and continue learning
                     as much as I can. Below are some of my most memorable projects I&#39;ve worked on:
                 </p>

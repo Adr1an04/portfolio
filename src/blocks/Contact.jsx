@@ -73,7 +73,7 @@ const Contact = () => {
     return (
         <section className="text-white" id="contact">
             <div className="relative py-28 flex items-center justify-center flex-col px-4" data-aos="fade-up">
-                <div className="text-3xl sm:text-4xl md:text-5xl text-center mb-6 whitespace-nowrap">Contact Me</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl text-center mb-8 mt-16 whitespace-nowrap">Contact Me</div>
                 <p className="text-lg sm:text-xl md:text-2xl text-center mb-8">
                     I&#39;d love to hear from you! Please feel free to send me an email, thank you!
                 </p>

@@ -330,28 +330,32 @@ export const workExperiences = [
         duration: 'Present - Fall 2026',
         title: "As a Computer Science student at the University of Central Florida," +
             " I've completed Data Structures I and II, Cyber Security, and Mobile Development." +
-            " These courses have strengthened my skills in algorithms, security, and app development, " +
-            "preparing me for practical challenges in the tech industry.",
-        icon: '/assets/unary.svg',
+            " I have strengthened my skills in algorithms, security, and app development.",
+        icon: '/assets/ucf.svg',
     },
     {
         id: 2,
-        name: 'U.N.A.R.Y Lab',
-        pos: 'Research Assistant',
-        duration: 'Aug 2024 - Present',
-        title: "As a member of an 8-person team, I am developing a unary brain-computer interface using PyTorch and Python under the guidance of a PhD professor. My primary responsibility is designing a processing pipeline that integrates a custom large language model (LLM) with LangChain to classify EEG signals. I also conduct unit tests on various LLMs to ensure the accuracy of EEG classification.",
-        icon: '/assets/unary.svg',
-    },
-    {
-        id: 4,
-        name: 'AWS Academy',
-        pos: 'Student',
-        duration: 'Aug 2024 - Present',
-        title: "Completed foundational cloud computing courses and earned badges in Cloud Security and Foundations. Gained practical skills in AWS services and architecture, focusing on secure application deployment.",
-        icon: '/assets/eyeavenue.svg',
+        name: 'Knight Hacks',
+        pos: 'Hackathon Organizer',
+        duration: 'Dec 2024 - Present',
+        title: "As a hackathon organizer, I primarily handle the logistical planning and coordination of Knight Hacks VIII. " +
+            "Additionally, I designed the Knight Hacks business card and work on building connections with companies.",
+        icon: '/assets/kh.svg',
     },
     {
         id: 3,
+        name: 'U.N.A.R.Y Lab',
+        pos: 'Research Assistant',
+        duration: 'Aug 2024 - Present',
+        title: "As a member of an 8-person team, I am developing a unary brain-computer interface using " +
+            "PyTorch and Python under the guidance of a PhD professor. " +
+            "y primary responsibility is designing a processing pipeline that integrates a" +
+            " custom large language model (LLM) with LangChain to classify EEG signals." +
+            " I also conduct unit tests on various LLMs to ensure the accuracy of EEG classification.",
+        icon: '/assets/unary.svg',
+    },
+    {
+        id: 5,
         name: 'The Eye Avenue',
         pos: 'Optical Assistant',
         duration: 'Oct 2023 - Present',

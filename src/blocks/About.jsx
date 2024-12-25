@@ -17,9 +17,10 @@ const About = () => {
                 <div className="text-center" data-aos="fade-up">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl text-center mb-6 whitespace-nowrap">Who am I?</h2>
                     <p className="text-lg md:text-xl lg:text-2xl text-gray-100 mb-6 max-w-6xl mx-auto">
-                        I’m Adrian Osorio, a computer science student at the University of Central Florida and
-                        researcher at the U.N.A.R.Y lab. In my free time, I enjoy hiking, photography, working
-                        on cars, playing video games, and spending time with friends and family.
+                        I’m Adrian Osorio, a computer science student at the University of Central Florida,
+                        Knight Hacks Hackathon Organizer, and Researcher at the U.N.A.R.Y lab. In my free time,
+                        I enjoy hiking, photography, working on cars, playing video games, and
+                        spending time with friends and family.
                     </p>
                 </div>
             </div>
@@ -40,8 +41,8 @@ const About = () => {
                     </div>
                     <h3 className="text-3xl sm:text-4xl md:text-5xl text-center mb-6 whitespace-nowrap">Skills</h3>
                     <p className="mt-4 text-lg md:text-xl lg:text-2xl max-w-[500px] text-center mx-auto">
-                        Over the past year, I have committed myself to learning new skills across various technologies.
-                        As I continue to expand my knowledge, here are some of the technologies I am now familiar with:
+                        I have committed myself to learning new skills across various zones.
+                        As I continue to learn more, here are some of the technologies I am now familiar with:
                     </p>
                 </div>
 
@@ -102,21 +103,6 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="mt-16 text-center">
-                <img src="assets/usa.svg"
-                     alt="USA"
-                     loading="lazy"
-                     className="w-auto h-auto mx-auto"
-                     data-aos="fade-right"
-                     style={{filter: "invert(34%) sepia(58%) saturate(1309%) hue-rotate(180deg) brightness(95%) contrast(91%)"}}/>
-                <h3 className="text-3xl sm:text-4xl md:text-5xl text-center mt-4 whitespace-nowrap"
-                    data-aos="fade-up">Located in the U.S.</h3>
-                <p className="text-lg md:text-xl lg:text-2xl text-gray-100 mt-6 max-w-5xl mx-auto" data-aos="fade-up">
-                    I am an aspiring software engineer seeking opportunities across the U.S.
-                    With experience in full-stack development, I’m eager to contribute and take on challenging projects.
-                </p>
-            </div>
-
             <div className="mt-16 flex flex-col items-center text-center" data-aos="fade-up">
                 <img
                     src="assets/mountains.JPG"
@@ -125,44 +111,47 @@ const About = () => {
                     data-aos="fade-right"
                     className="w-10/12 max-w-[1000px] h-[250px] md:h-[500px] object-cover rounded-lg lg:rounded-xl shadow-lg mb-8"
                 />
+                <div className="text-2xl md:text-3xl text-nowrap mt-2 mb-6" data-aos="fade-up">
+                    Check out some of my links!
+                </div>
 
-                <div className="flex gap-6 mt-3md:mt-8" data-aos="fade-up">
+                <div className="flex gap-16 mt-3 md:mt-8" data-aos="fade-up">
                     <a href="https://github.com/Adr1an04" target="_blank" rel="noopener noreferrer"
-                       className="social-icon hover:text-blue-500">
+                       className="social-icon hover:text-blue-500 flex flex-col items-center">
                         <img
                             src="/assets/github.svg"
                             alt="GitHub"
-                            className="w-1-0 h-10 transition duration-300 ease-in-out transform hover:scale-110"
+                            className="w-12 h-12 transition duration-300 ease-in-out transform hover:scale-110"
                         />
+                        <span className="mt-2 text-center text-sm">GitHub</span>
                     </a>
 
                     <a href="https://www.linkedin.com/in/adrianosoriob/" target="_blank" rel="noopener noreferrer"
-                       className="social-icon hover:text-blue-500">
+                       className="social-icon hover:text-blue-500 flex flex-col items-center">
                         <img
                             src="/assets/linkedin.svg"
                             alt="LinkedIn"
-                            className="w-10 h-10 transition duration-300 ease-in-out transform hover:scale-110"
+                            className="w-12 h-12 transition duration-300 ease-in-out transform hover:scale-110"
                         />
+                        <span className="mt-2 text-center text-sm">LinkedIn</span>
                     </a>
 
                     <a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"
-                       className="social-icon hover:text-blue-500">
+                       className="social-icon hover:text-blue-500 flex flex-col items-center">
                         <img
                             src="/assets/resume.svg"
                             alt="Resume"
-                            className="w-10 h-10 transition duration-300 ease-in-out transform hover:scale-110"
+                            className="w-12 h-12 transition duration-300 ease-in-out transform hover:scale-110"
                         />
+                        <span className="mt-2 text-center text-sm">Resume</span>
                     </a>
                 </div>
 
-                <div className="text-3xl md:text-4xl text-nowrap mt-3" data-aos="fade-up">
-                    Like my portfolio so far?
-                </div>
-                <p className="mt-2 text-lg md:text-xl text-gray-100" data-aos="fade-up">
+                <p className="mt-8 text-lg md:text-xl text-gray-100" data-aos="fade-up">
                     Feel free to reach out to me!
                 </p>
 
-                <div className="mt-8 mb-10 sm:w-fit w-full z-10 flex justify-center" data-aos="fade-up">
+                <div className="mt-5 mb-10 sm:w-fit w-full z-10 flex justify-center" data-aos="fade-up">
                     <a href="#contact" className="w-full sm:w-auto">
                         <Button
                             name="Contact"
