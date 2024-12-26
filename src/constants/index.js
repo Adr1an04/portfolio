@@ -345,7 +345,7 @@ export const workExperiences = [
     {
         id: 3,
         name: 'U.N.A.R.Y Lab',
-        pos: 'Research Assistant',
+        pos: 'Undergraduate Researcher',
         duration: 'Aug 2024 - Present',
         title: "As a member of an 8-person team, I am developing a unary brain-computer interface using " +
             "PyTorch and Python under the guidance of a PhD professor. " +
