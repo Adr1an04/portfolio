@@ -136,7 +136,7 @@ const About = () => {
                         <span className="mt-2 text-center text-sm">LinkedIn</span>
                     </a>
 
-                    <a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"
+                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
                        className="social-icon hover:text-blue-500 flex flex-col items-center">
                         <img
                             src="/assets/resume.svg"
