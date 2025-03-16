@@ -154,7 +154,7 @@ const About = () => {
 
         <div className="mt-16 flex flex-col items-center text-center" data-aos="fade-up">
           <img
-            src="assets/mountains.jpg"
+            src="/assets/mountains.jpg"
             alt="Your Portfolio"
             loading="lazy"
             data-aos="fade-right"
