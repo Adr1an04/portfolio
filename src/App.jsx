@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  
+
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -60,6 +60,7 @@ function App() {
             default-src 'self' blob:;
             connect-src 'self' blob:;
             style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+            style-src-elem 'self' https://fonts.googleapis.com;
             font-src 'self' https://fonts.gstatic.com;
             img-src 'self' data: blob: https://adrianosor.io;
           " />
