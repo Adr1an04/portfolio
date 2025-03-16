@@ -153,12 +153,12 @@ const About = () => {
         </div>
 
         <div className="mt-16 flex flex-col items-center text-center" data-aos="fade-up">
-          <img
-            src='assets/mountains.jpg'
-            alt="Mountains"
+        <img
+            src="/assets/mountains.jpg"
+            alt="Who am I?"
             loading="lazy"
-            data-aos="fade-right"
             className="w-10/12 max-w-[1000px] h-[250px] md:h-[500px] object-cover rounded-lg lg:rounded-xl shadow-lg mb-8"
+            data-aos="fade-up"
           />
           <div className="text-2xl md:text-3xl text-nowrap mt-14 mb-6" data-aos="fade-up">
             Check out some of my links!
