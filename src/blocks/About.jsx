@@ -154,8 +154,8 @@ const About = () => {
 
         <div className="mt-16 flex flex-col items-center text-center" data-aos="fade-up">
           <img
-            src="/assets/mountains.jpg"
-            alt="Your Portfolio"
+            src='assets/mountains.jpg'
+            alt="Mountains"
             loading="lazy"
             data-aos="fade-right"
             className="w-10/12 max-w-[1000px] h-[250px] md:h-[500px] object-cover rounded-lg lg:rounded-xl shadow-lg mb-8"
