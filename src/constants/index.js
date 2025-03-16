@@ -2,40 +2,40 @@ export const navLinks = [
     {
         id: 1,
         name: 'Home',
-        href: '#home',
+        href: '/',
     },
     {
         id: 2,
         name: 'About',
-        href: '#about',
+        href: '/about',
     },
     {
         id: 3,
-        name: 'Experience',
-        href: '#experience',
+        name: 'Career',
+        href: '/career',
     },
     {
         id: 4,
         name: 'Projects',
-        href: '#projects',
+        href: '/projects',
     },
     {
         id: 5,
-        name: 'Contact',
-        href: '#contact',
+        name: 'Photography',
+        href: '/photography',
     },
 ];
 
 export const myProjects = [
     {
-        id: 1,
-        title: 'BCI',
-        desc: 'As part of my research with the U.N.A.R.Y Lab, I am developing an EEG data pipeline to process signals ' +
-            'and input them into a Large Language Model (LLM) for real-time classification. ' +
-            'This project aims to leverage machine learning for real-time brain activity insights, advancing brain-computer interfaces.',
+        id: 5,
+        title: 'AthenaAI',
+        desc: 'AthenaAI was a GPT-based tool developed for Morgan & Morgan to provide legal advisory services to ' +
+            'civilians in need. My team integrated Google Speech-to-Text for voice interactions, aiming to make legal ' +
+            'information more accessible and showcasing the potential of technology in the legal field.',
         subdesc:
-            'Fall 2024',
-        logo: '/assets/BCI.svg',
+            'KnightHacks VI',
+        logo: '/assets/athenaAI.svg',
         logoStyle: {
             backgroundColor: '#1C1A43',
             border: '0.2px solid #252262',
@@ -47,36 +47,25 @@ export const myProjects = [
                 id: 1,
                 name: 'Python',
                 path: '/assets/python.svg',
-
             },
             {
                 id: 2,
-                name: 'LangChain',
-                path: '/assets/langchain.svg',
+                name: 'GPT',
+                path: 'assets/gpt.svg',
             },
             {
                 id: 3,
-                name: 'Llama',
-                path: '/assets/llama.svg',
+                name: 'Morgan & Morgan',
+                path: '/assets/mm.svg',
             },
             {
                 id: 4,
-                name: 'Anaconda',
-                path: '/assets/anaconda.svg',
-            },
-            {
-                id: 5,
-                name: 'PyTorch',
-                path: '/assets/pytorch.svg',
-            },
-            {
-                id: 6,
-                name: 'Hugging Face',
-                path: '/assets/huggingface.svg',
+                name: 'Google Text-to-Speech',
+                path: '/assets/tts.svg',
             },
         ],
         hasLink: true,
-        link: 'https://www.unarylab.com/',
+        link: 'https://devpost.com/software/athenaai',
     },
     {
         id: 2,
@@ -192,14 +181,14 @@ export const myProjects = [
         ],
     },
     {
-        id: 5,
-        title: 'AthenaAI',
-        desc: 'AthenaAI was a GPT-based tool developed for Morgan & Morgan to provide legal advisory services to ' +
-            'civilians in need. My team integrated Google Speech-to-Text for voice interactions, aiming to make legal ' +
-            'information more accessible and showcasing the potential of technology in the legal field.',
+        id: 1,
+        title: 'BCI',
+        desc: 'As part of my research with the U.N.A.R.Y Lab, I am developing an EEG data pipeline to process signals ' +
+            'and input them into a Large Language Model (LLM) for real-time classification. ' +
+            'This project aims to leverage machine learning for real-time brain activity insights, advancing brain-computer interfaces.',
         subdesc:
-            'KnightHacks VI',
-        logo: '/assets/athenaAI.svg',
+            'Fall 2024',
+        logo: '/assets/BCI.svg',
         logoStyle: {
             backgroundColor: '#1C1A43',
             border: '0.2px solid #252262',
@@ -211,25 +200,36 @@ export const myProjects = [
                 id: 1,
                 name: 'Python',
                 path: '/assets/python.svg',
+
             },
             {
                 id: 2,
-                name: 'GPT',
-                path: 'assets/gpt.svg',
+                name: 'LangChain',
+                path: '/assets/langchain.svg',
             },
             {
                 id: 3,
-                name: 'Morgan & Morgan',
-                path: '/assets/mm.svg',
+                name: 'Llama',
+                path: '/assets/llama.svg',
             },
             {
                 id: 4,
-                name: 'Google Text-to-Speech',
-                path: '/assets/tts.svg',
+                name: 'Anaconda',
+                path: '/assets/anaconda.svg',
+            },
+            {
+                id: 5,
+                name: 'PyTorch',
+                path: '/assets/pytorch.svg',
+            },
+            {
+                id: 6,
+                name: 'Hugging Face',
+                path: '/assets/huggingface.svg',
             },
         ],
         hasLink: true,
-        link: 'https://devpost.com/software/athenaai',
+        link: 'https://www.unarylab.com/',
     },
     {
         id: 6,
@@ -281,6 +281,87 @@ export const myProjects = [
         hasLink: true,
         link: 'https://devpost.com/software/spoiler-alert-ikhyfg',
     },
+    {
+        id: 7,
+        title: 'MystVeil',
+        desc: ' With a team of 4, I developed MystVeil, MystVeil is a witch game where you play as Liora' +
+            ' and you have to defeat the court wizard. You can use your magic powers to defeat him and his minions. ' +
+            'The game is set in a fantasy world where you can explore different locations and interact with various characters.',
+        subdesc:
+            'Spring 2025',
+        logo: '/assets/liora.svg',
+        logoStyle: {
+            backgroundColor: '#1C1A43',
+            border: '0.2px solid #252262',
+            boxShadow: '0px 0px 60px 0px #6ß35BFF4D',
+        },
+        spotlight: '/assets/spotlight5.png',
+        tags: [
+            {
+                id: 1,
+                name: 'C++',
+                path: '/assets/c++.svg',
+
+            },
+            {
+                id: 2,
+                name: 'Unity',
+                path: '/assets/unity.svg',
+            },
+        ],
+        hasLink: true,
+        link: 'https://github.com/Amy621/Mystveil',
+    },
+    {
+        id: 8,
+        title: 'kmodo',
+        desc: 'Designed a scalable hackathon management system with role-based access and real-time event organization. ' +
+            'Implemented user authentication, event scheduling, and a dynamic dashboard for organizers and participants.',
+        subdesc:
+            'Spring 2025',
+        logo: '/assets/kmodo.svg',
+        logoStyle: {
+            backgroundColor: '#1C1A43',
+            border: '0.2px solid #252262',
+            boxShadow: '0px 0px 60px 0px #6ß35BFF4D',
+        },
+        spotlight: '/assets/spotlight5.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Typescript',
+                path: '/assets/ts.svg',
+
+            },
+            {
+                id: 3,
+                name: 'Next.js',
+                path: '/assets/next.svg',
+            },
+            {
+                id: 4,
+                name: 'T3',
+                path: '/assets/t3.svg',
+            },
+            {
+                id: 5,
+                name: 'Drizzle',
+                path: '/assets/drizzle.svg',
+            },
+            {
+                id: 6,
+                name: 'VPS',
+                path: '/assets/vps.svg',
+            },
+            {
+                id: 7,
+                name: 'Coolify',
+                path: '/assets/coolify.svg',
+            },
+        ],
+        hasLink: true,
+        link: 'https://github.com/kmodo-org/kmodo',
+    },
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -291,8 +372,8 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
         SunScale:isSmall ? 0.018 : isMobile ? 0.02 : isTablet ? 0.04 : 0.05,
         SunPosition: isMobile ? [-6.9, 8.3,-9] : isTablet ? [-12, 13,-29] : [-25, 13.6,-20],
 
-        HoohScale:isSmall ? 0.02 : isMobile ? 0.02 : isTablet ? 0.03 : 0.04,
-        HoohPosition: isMobile ? [-5.9, 8.3,-6] : isTablet ? [-20, 13,-20] : [-60,12,-15],
+        HoohScale:isSmall ? .95 : isMobile ? 1 : isTablet ? 1.2 : 1.5,
+        HoohPosition: isMobile ? [-5.9, 10.3,-6] : isTablet ? [-20, 14,-20] : [-60,18,-15],
 
         CloudsScale:isSmall ? 20 : isMobile ? 20 : isTablet ? 20 : 40,
         CloudsPosition: isMobile ? [-5.9, 7.9,-20] : isTablet ? [-12, 13,-20] : [0,10.5,-40],
@@ -333,17 +414,27 @@ export const workExperiences = [
             " I have strengthened my skills in algorithms, security, and app development.",
         icon: '/assets/ucf.svg',
     },
-    {
+    /*{
         id: 2,
-        name: 'Knight Hacks',
-        pos: 'Hackathon Organizer',
-        duration: 'Dec 2024 - Present',
-        title: "As a hackathon organizer, I primarily handle the logistical planning and coordination of Knight Hacks VIII. " +
-            "Additionally, I designed the Knight Hacks business card and work on building connections with companies.",
-        icon: '/assets/kh.svg',
-    },
+        name: 'BNY Mellon',
+        pos: 'Software Engineer Intern',
+        duration: 'May 2025 - Present',
+        title: "Incoming Software Engineer Intern at BNY Mellon...",
+        icon: '/assets/bny.svg',
+    },*/
     {
         id: 3,
+        name: 'Knight Hacks',
+        pos: 'Treasurer',
+        duration: 'Jan 2025 - Present',
+        title: "As the Treasurer of Knight Hacks, I manage the budget and finances, " +
+            "ensuring the event's financial success. As an excecutive board member, " +
+            "I also contribute to the planning and execution of the hackathon, " +
+            "helping to create a great experience for all participants.",
+        icon: '/assets/khNeon.svg',
+    },
+    {
+        id: 4,
         name: 'U.N.A.R.Y Lab',
         pos: 'Undergraduate Researcher',
         duration: 'Aug 2024 - Present',
@@ -361,5 +452,14 @@ export const workExperiences = [
         duration: 'Oct 2023 - Present',
         title: "At The Eye Avenue, I assist patients with eyeglass orders, ensuring they find the perfect fit and style. Additionally, I support the optician with lab orders and provide comprehensive patient care, giving them a good experience.",
         icon: '/assets/eyeavenue.svg',
+    },
+    {
+        id: 6,
+        name: 'Knight Hacks',
+        pos: 'Hackathon Organizer',
+        duration: 'Dec 2024 - Jan 2025',
+        title: "As a hackathon organizer, I primarily handle the logistical planning and coordination of Knight Hacks VIII. " +
+            "Additionally, I designed the Knight Hacks business card and work on building connections with companies.",
+        icon: '/assets/kh.svg',
     },
 ];
