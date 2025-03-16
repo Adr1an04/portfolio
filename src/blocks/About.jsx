@@ -152,19 +152,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-center text-center" data-aos="fade-up">
-        <img
-            src="/assets/mountains.jpg"
-            alt="Who am I?"
-            loading="lazy"
-            className="w-10/12 max-w-[1000px] h-[250px] md:h-[500px] object-cover rounded-lg lg:rounded-xl shadow-lg mb-8"
-            data-aos="fade-up"
-          />
-          <div className="text-2xl md:text-3xl text-nowrap mt-14 mb-6" data-aos="fade-up">
+        <div className="mt-14 flex flex-col items-center text-center" data-aos="fade-up">
+          <div className="text-2xl md:text-3xl text-nowrap mt-8 mb-6" data-aos="fade-up">
             Check out some of my links!
           </div>
 
-          <div className="flex gap-16 mt-3 md:mt-8" data-aos="fade-up">
+          <div className="flex gap-16 mt-4 md:mt-8" data-aos="fade-up">
             <a
               href="https://github.com/Adr1an04"
               target="_blank"
