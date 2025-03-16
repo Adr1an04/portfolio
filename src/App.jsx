@@ -35,10 +35,11 @@ function App() {
     <HelmetProvider>
       <BrowserRouter>
         <Helmet>
-          <title>Adrian Osorio Blanchard | Software Engineer & More</title>
+          <base href="/" />
+          <title>Adrian Osorio Blanchard | Software Engineer</title>
           <meta 
             name="description" 
-            content="Welcome to my personal website where I share my journey as a Software Engineer, Student, Researcher, Treasurer, and more." 
+            content="Welcome to my personal website where I share my journey as a Software Engineer, Student, Researcher, and Treasurer." 
           />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://adrianosor.io" />
@@ -46,13 +47,13 @@ function App() {
           <meta property="og:site_name" content="Adrian Osorio Blanchard" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://adrianosor.io" />
-          <meta property="og:title" content="Adrian Osorio Blanchard | Software Engineer & More" />
+          <meta property="og:title" content="Adrian Osorio Blanchard | Software Engineer" />
           <meta property="og:description" content="Welcome to my personal website where I share my journey as a Software Engineer, Student, Researcher, and Treasurer." />
           <meta property="og:image" content="https://adrianosor.io/assets/og-image.jpg" />
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@your_twitter_handle" />
-          <meta name="twitter:title" content="Adrian Osorio Blanchard | Software Engineer & More" />
+          <meta name="twitter:site" content="@idk" />
+          <meta name="twitter:title" content="Adrian Osorio Blanchard | Software Engineer" />
           <meta name="twitter:description" content="Welcome to my personal website where I share my journey as a Software Engineer, Student, Researcher, and Treasurer." />
           <meta name="twitter:image" content="https://adrianosor.io/assets/twitter-card.jpg" />
 
