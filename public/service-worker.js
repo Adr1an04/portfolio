@@ -11,8 +11,11 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  if (event.request.url.includes('fonts.gstatic.com')) {
-      return;
+  if (
+    event.request.url.includes('fonts.googleapis.com') ||
+    event.request.url.includes('fonts.gstatic.com')
+  ) {
+    return fetch(event.request);
   }
   event.respondWith(
       caches.match(event.request).then((cachedResponse) => {
