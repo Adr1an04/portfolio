@@ -11,20 +11,26 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  // Bypass caching for fonts and assets
   if (
     event.request.url.includes('fonts.googleapis.com') ||
-    event.request.url.includes('fonts.gstatic.com')
+    event.request.url.includes('fonts.gstatic.com') ||
+    event.request.url.includes('/assets/')
   ) {
     return fetch(event.request);
   }
+  
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
-      return cachedResponse || fetch(event.request).then((response) => {
-        return caches.open('portfolio-cache-v1').then((cache) => {
-          cache.put(event.request, response.clone());
-          return response;
-        });
-      });
+      return (
+        cachedResponse ||
+        fetch(event.request).then((response) => {
+          return caches.open('portfolio-cache-v1').then((cache) => {
+            cache.put(event.request, response.clone());
+            return response;
+          });
+        })
+      );
     })
   );
 });
