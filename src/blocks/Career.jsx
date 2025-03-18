@@ -75,9 +75,8 @@ function Career() {
                     data-aos={`fade-${isEven ? 'right' : 'left'}`}
                     data-aos-delay={index * 100}
                   >
-                    {/* Content Card */}
                     <div
-                      className={`w-full md:w-5/12 p-6 rounded-2xl backdrop-blur-lg border border-blue-100/50 shadow-xl hover:shadow-2xl ${
+                      className={`w-full md:w-7/12 p-6 rounded-2xl backdrop-blur-lg border border-blue-100/50 shadow-xl hover:shadow-2xl ${
                         isEven ? 'mr-8' : 'ml-8'
                       }`}
                       style={{
@@ -96,22 +95,20 @@ function Career() {
                           />
                         )}
                         <div>
-                          <p className="text-sm text-white-400 font-mono">{item.duration}</p>
-                          <h3 className="text-2xl font-bold break-words">{item.pos}</h3>
-                          <p className="text-white">{item.name}</p>
+                          <p className="text-xs sm:text-sm text-white-400 font-mono">{item.duration}</p>
+                          <h3 className="text-md sm:text-2xl font-bold">{item.pos}</h3>
+                          <p className="text-xs sm:text-sm text-white">{item.name}</p>
                         </div>
                       </div>
-                      <p className="text-white-400 leading-relaxed">{item.title}</p>
+                      <p className="text-xs sm:text-sm text-white-400 leading-relaxed">{item.title}</p>
                       <div className="mt-4 flex flex-wrap gap-2">
                         {item.tech?.map((tech, i) => (
-                          <span key={i} className="px-3 py-1 text-sm bg-gray-700/50 rounded-full">
+                          <span key={i} className="px-3 py-1 text-xs sm:text-sm bg-gray-700/50 rounded-full">
                             {tech}
                           </span>
                         ))}
                       </div>
                     </div>
-
-                    {/* Timeline Dot */}
                     <div className="relative w-24 h-24 flex items-center justify-center">
                       <div className="absolute w-8 h-8 bg-blue-300 rounded-full shadow-lg ring-4 ring-blue-400/30 animate-pulse" />
                       <span className="absolute text-2xl font-bold text-white">
@@ -123,8 +120,6 @@ function Career() {
               })}
             </div>
           </div>
-
-          {/* Floating Elements */}
           <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
             {[...Array(20)].map((_, i) => (
               <div

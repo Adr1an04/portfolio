@@ -3,17 +3,16 @@
 @tailwind utilities;
 
 body {
-  background-color: #18181b;
+  background: #7baeff;
+  background-size: cover;
   overscroll-behavior: none;
   user-select: none;
+  background-image: url("/assets/triangles.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: tomorrow, sans-serif;
 }
 
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #f0f0f0;
-  }
-}
 
 * {
   scroll-behavior: smooth;
@@ -23,13 +22,6 @@ body {
   font-family: "Tomorrow", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-body {
-  background-image: url("/assets/triangles.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: tomorrow, sans-serif;
 }
 
 /* Responsive design */
@@ -46,11 +38,11 @@ body {
 
 
 
-.typewriter h1 {
+.typewriter h2 {
   overflow: hidden;
   border-right: .15em solid #2b77E7 ;
   white-space: nowrap;
-  animation: typing 0.1ms steps(30, end), blink-caret .5s step-end infinite;
+  animation: typing 0.1ms steps(30, end), blink-caret .8s step-end infinite;
 }
 
 @keyframes typing {

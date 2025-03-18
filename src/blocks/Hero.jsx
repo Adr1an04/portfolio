@@ -76,7 +76,7 @@ const Hero = () => {
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl text-center text-white whitespace-nowrap">
             Hey, I&#39;m Adrian Osorio!
           </h1>
-          <div className="typewriter">
+          <div className="typewriter boc">
             <h2 className="hero_tag px-2">{typeEffect}</h2>
           </div>
         </div>
