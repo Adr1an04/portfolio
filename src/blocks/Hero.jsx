@@ -19,6 +19,8 @@ import Cabin from "../components/Cabin.jsx";
 import Clouds from "../components/Clouds.jsx";
 import Sword from "../components/Sword.jsx";
 import { Rayquaza } from '../components/Rayquaza.jsx';
+import * as THREE from "three";
+THREE.Cache.enabled = true;
 
 const Hero = () => {
   const [typeEffect] = useTypewriter({
@@ -81,7 +83,6 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Canvas with ARIA label */}
         <div className="w-full h-full absolute inset-0" role="img" aria-label="3D visual representation of my portfolio">
           <Canvas className="w-full h-full">
             <Suspense fallback={<CanvasLoader />}>
