@@ -419,7 +419,7 @@ export const workExperiences = [
         name: 'BNY Mellon',
         pos: 'Software Engineer Intern',
         duration: 'May 2025 - Present',
-        title: "Incoming Software Engineer Intern at BNY Mellon",
+        title: "Incoming Software Engineer Intern at BNY Mellon.",
         icon: '/assets/bny.svg',
     },
     {
