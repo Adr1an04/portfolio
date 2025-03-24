@@ -414,14 +414,14 @@ export const workExperiences = [
             " I have strengthened my skills in algorithms, security, and app development.",
         icon: '/assets/ucf.svg',
     },
-    /*{
+    {
         id: 2,
         name: 'BNY Mellon',
         pos: 'Software Engineer Intern',
         duration: 'May 2025 - Present',
-        title: "Incoming Software Engineer Intern at BNY Mellon...",
+        title: "Incoming Software Engineer Intern at BNY Mellon",
         icon: '/assets/bny.svg',
-    },*/
+    },
     {
         id: 3,
         name: 'Knight Hacks',
@@ -435,6 +435,15 @@ export const workExperiences = [
     },
     {
         id: 4,
+        name: 'Knight Hacks',
+        pos: 'Hackathon Organizer',
+        duration: 'Dec 2024 - Jan 2025',
+        title: "As a hackathon organizer, I primarily handle the logistical planning and coordination of Knight Hacks VIII. " +
+            "Additionally, I designed the Knight Hacks business card and work on building connections with companies.",
+        icon: '/assets/kh.svg',
+    },
+    {
+        id: 5,
         name: 'U.N.A.R.Y Lab',
         pos: 'Undergraduate Researcher',
         duration: 'Aug 2024 - Present',
@@ -446,20 +455,11 @@ export const workExperiences = [
         icon: '/assets/unary.svg',
     },
     {
-        id: 5,
+        id: 6,
         name: 'The Eye Avenue',
         pos: 'Optical Assistant',
         duration: 'Oct 2023 - Present',
         title: "At The Eye Avenue, I assist patients with eyeglass orders, ensuring they find the perfect fit and style. Additionally, I support the optician with lab orders and provide comprehensive patient care, giving them a good experience.",
         icon: '/assets/eyeavenue.svg',
-    },
-    {
-        id: 6,
-        name: 'Knight Hacks',
-        pos: 'Hackathon Organizer',
-        duration: 'Dec 2024 - Jan 2025',
-        title: "As a hackathon organizer, I primarily handle the logistical planning and coordination of Knight Hacks VIII. " +
-            "Additionally, I designed the Knight Hacks business card and work on building connections with companies.",
-        icon: '/assets/kh.svg',
     },
 ];
